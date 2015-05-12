@@ -1,0 +1,61 @@
+5/10/2015 1:55:45 PM 
+#Playing the War Games#
+  
+###Installed Cywin###
+2. Installed SSH for windows. SSH is for secure loging to a remore server, through Cywin.
+3. Opened the Cygwin terminal as the administrator
+3. Configured the SSH server ****"ssh-host-config"****
+4. Enter the value for CYGWING for damon[]****netsec****
+5. Restart SSH service **"net start sshd**
+6. Open the computer management section in Windows and go to the users section, and check whether the users are added.  if added then it shous show ****"cyg_server"**** and ****"SSHD"**** user
+
+
+###Playing Level Zero to One###
+5/10/2015 1:55:20 PM 
+
+1. Connecting to the Bandit server ****"$ ssh bandit0@bandit.labs.overthewire.org"****
+2. Gave password **"Bandit0"** and entered into the "Bandit" server. 
+3. Hint from Bandit**"The password for the next level is stored in a file called readme"**.
+4. Use **"ls readme"** command.  (****"ls"**** is a command to list files in Unix and Unix-like operating systems.)
+5. Give **"Cat readme"** command (****"cat"**** is one of the most frequently used commands on Unix-like operating systems. It has three related functions with regard to text files: displaying them, combining copies of them and creating new ones.)
+6. The above command read the **"Readme"** file.  There found the password for the level one. The password is: boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+7. Entered the level one using above password.
+
+
+###Playing Level one to two###
+5/11/2015 7:26:03 PM 
+
+1. Entered the **"Clear"**command
+2. Entered the bandit server by typing ****"ssh bandit1@bandit.labs.overthewire.org"**** command
+3. Hint from Bandit ****"The password for the next level is stored in a file called - located in the home directory"****  There fore the goal in this step is to find the folder named as "-".  Therefore entered **"ls-a"** command  (In computing, ****"ls"**** is a command to list files in Unix and Unix-like operating systems. When invoked without any arguments, ls lists the files in the current.  The ****"-a"**** flag means to show all files, including those starting with a full stop, e.g. .profile which many version of ****"ls"**** exclude. This makes them sort of hidden).
+4. The cd command is used to change the current directory (i.e., the directory in which the user is currently working)
+5. Then use **"cat ./-"** to get the passwaord to the next level.  The password is: CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+6. Entered the server of level three by entering the above password.
+
+
+### Playing Level 2 to 3 ###
+5/12/2015 8:19:17 PM 
+
+
+
+1. Entered the server of level two by entering the above password, which we discoverded in above level.
+1. Hint from Bandit **The password for the next level is stored in a file called spaces in this filename located in the home directory.**
+2. Used commas **"ls
+spaces in this filename"** to list files.
+3. Then use **cat "spaces in this filename"** command to display the file.
+4. Then it dis playe the password UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK.
+5. Use this password to get to the level 3.
+
+
+### Playing Level 3 to 4 ###
+
+1. Bandit hint **The password for the next level is stored in a hidden file in the inhere directory.**  Therefore, use **ls** comannad to list file name "inhere".
+2. **ls inhere**
+3. **cd inhere** to change to the "inhere directory.
+4. **la -a** To list  files.  This resulted **.... ..hidden**
+5. Therefore, used **cat.hidden** to read the above shown folder called "hidden".
+6. There fond the password pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+7. Exit the bandit3 server by giving **Exit** commans
+8. Entered the Bandit4 server by using the above password.
+
+
